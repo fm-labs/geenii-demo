@@ -22,3 +22,12 @@ This is a demo agent that checks the `tasks` folder for any new tasks and tries 
 4. Once the task is solved, just print the solution to the console.
 5. After solving the task, move the task file to a `completed` folder to keep track of completed tasks.
 6. Commit the changes to the repository with a message indicating the task that was completed (e.g., "Completed task1: [brief description of the solution]").
+
+
+## Quick Reference
+
+| Task Step                              | Tool            | Arg                              |
+|----------------------------------------|-----------------|----------------------------------|
+| Check `tasks` folders                  | execute_command | `ls -l tasks`                    |
+| Read task file contents                | file_read       | `path/to/taskfile`               |
+| Move a task file to `completed` folder | execute_command | `mv path/to/taskfile completed/` |

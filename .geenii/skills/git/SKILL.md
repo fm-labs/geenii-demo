@@ -53,43 +53,11 @@ git log --oneline -n N
 # e.g. git log --oneline -n 5
 ```
 
-### Clone a Git repository:
+### Commit new changes to a Git repository:
 
 ```bash
-git clone REPOSITORY_URL
-# e.g. git clone https://github.com/username/repository.git
-```
-
-### Check the current branch of a Git repository:
-
-```bash
-git branch --show-current
-```
-
-### List all branches in a Git repository:
-
-```bash
-git branch
-```
-
-### Create a new branch in a Git repository:
-
-```bash
-git checkout -b NEW_BRANCH_NAME
-# e.g. git checkout -b feature/new-feature
-```
-
-### Switch to an existing branch in a Git repository:
-
-```bash
-git checkout BRANCH_NAME
-# e.g. git checkout main
-```
-
-### Initialize a new Git repository in the current directory:
-
-```bash
-git init
+git add .
+git commit -m "Your commit message here"
 ```
 
 
