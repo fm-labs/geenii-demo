@@ -6,7 +6,7 @@ inputs:
   prompt:
     description: 'Override the default prompt'
     required: false
-    default: ''
+    default: 'Process the next task.'
   model:
     description: 'Override the default model to use'
     required: false
@@ -26,6 +26,7 @@ runs:
     DEFAULT_COMPLETION_MODEL: ${{ inputs.model }}
     GEENII_DIR: '/github/workspace/.geenii'
     GEENII_USER_DIR: '/github/workspace/.geenii'
+    GEENII_CI: 'true'
   args:
     - geenii
     - "${{ inputs.prompt }}"

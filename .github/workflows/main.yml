@@ -16,7 +16,8 @@ jobs:
         uses: ./ # action.yml in the root directory
         id: hello
         with:
-          prompt: 'Who are you?'
+          prompt: 'Process the next task'
+          model: 'openai:gpt-4o-mini'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
