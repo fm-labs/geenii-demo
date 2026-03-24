@@ -23,7 +23,8 @@ runs:
   image: 'fmlabs/geenii:latest'
   env:
     DEFAULT_COMPLETION_MODEL: ${{ inputs.model }}
-    GEENII_USER_DIR: '.geenii'
+    GEENII_DIR: '/github/workspace/.geenii'
+    GEENII_USER_DIR: '/github/workspace/.geenii'
   args:
     - geenii
     - "${{ inputs.prompt }}"
