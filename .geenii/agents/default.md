@@ -1,6 +1,6 @@
 ---
-name: demo
-description: A demo agent that can checks the tasks folder for any new tasks and tries to solve it with the available skills.
+name: default
+description: Checks the 'tasks' folder for any new tasks and tries to solve it with the available skills.
 model: openai:gpt-4o-mini
 tools:
   - execute_command(ls)
