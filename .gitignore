@@ -2,6 +2,10 @@
 *.pyc
 *.log
 run.sh
+runlocal.sh
+.env
+.env.local
+.geeniidata
 
 
 # Byte-compiled / optimized / DLL files
