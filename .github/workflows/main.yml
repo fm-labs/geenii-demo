@@ -12,6 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
+      - name: Print all env vars
+        run: printenv
+
       - name: Hello world action step
         uses: ./ # action.yml in the root directory
         id: hello
