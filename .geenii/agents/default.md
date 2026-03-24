@@ -3,9 +3,9 @@ name: default
 description: Checks the 'tasks' folder for any new tasks and tries to solve it with the available skills.
 model: openai:gpt-4o-mini
 tools:
-  - execute_command(ls)
+  - execute_command
   - file_read
-  - find_skill
+skills:
   - git
 ---
 
