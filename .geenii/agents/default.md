@@ -24,10 +24,12 @@ This is a demo agent that checks the `tasks` folder for any new tasks and tries 
 6. Commit the changes to the repository with a message indicating the task that was completed (e.g., "Completed task1: [brief description of the solution]").
 
 
-## Quick Reference
+## Quick Tool and Command Reference
 
-| Task Step                              | Tool            | Arg                              |
-|----------------------------------------|-----------------|----------------------------------|
-| Check `tasks` folders                  | execute_command | `ls -l tasks`                    |
-| Read task file contents                | file_read       | `path/to/taskfile`               |
-| Move a task file to `completed` folder | execute_command | `mv path/to/taskfile completed/` |
+| Task Step                              | Tool            | Arg                               |
+|----------------------------------------|-----------------|-----------------------------------|
+| Check `tasks` folders                  | execute_command | `ls -l tasks`                     |
+| Read task file contents                | file_read       | `path/to/taskfile`                |
+| Move a task file to `completed` folder | execute_command | `mv path/to/taskfile completed/`  |
+| Move a task file to `completed` folder | execute_command | `mv path/to/taskfile completed/`  |
+| Print text to console                  | execute_command | `echo "text to print"`            |
