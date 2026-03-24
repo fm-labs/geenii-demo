@@ -12,6 +12,7 @@ inputs:
     required: false
     default: 'openai:gpt-4o-mini'
 
+
 outputs:
   geenii-output:
     description: 'Output from the geenii agent'
@@ -20,7 +21,7 @@ outputs:
 
 runs:
   using: 'docker'
-  image: 'fmlabs/geenii:latest'
+  image: 'docker://docker.io/fmlabs/geenii:latest'
   env:
     DEFAULT_COMPLETION_MODEL: ${{ inputs.model }}
     GEENII_DIR: '/github/workspace/.geenii'
